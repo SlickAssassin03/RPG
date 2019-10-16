@@ -1,5 +1,5 @@
 /**
- * Class made to easily get small random numbers.
+ * Class made to easily roll dice for the program.
  */
 
 package dev.havenselph.rpg.tools;
