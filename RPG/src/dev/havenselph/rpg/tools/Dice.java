@@ -1,26 +1,27 @@
-/**
- * Class made to easily roll dice for the program.
- */
-
 package dev.havenselph.rpg.tools;
+
+// Dice object
+
+// Imports Start
 import java.util.Random;
+// Imports End
 
 public class Dice {
+	private static Random r = new Random();
 	public static int rollSix() {
-		return roll(5);
+		return roll(6);
 	}
 	
 	public static int rollNine() {
-		return roll(8);
+		return roll(9);
 	}
 	
 	public static int rollTwelve() {
-		return roll(11);
+		return roll(12);
 	}
 	
 	private static int roll(int max) {
-		Random r = new Random();
-		return (r.nextInt(max)+1);
+		return (r.nextInt((max-1))+1);
 	}
 
 }
